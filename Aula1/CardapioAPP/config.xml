@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        id="org.gutoxavier.cardapioapp"
+        version="1.0.0">
+    <name>
+        Cardápio APP
+    </name>
+
+    <description>
+        Comidas Gostosas
+    </description>
+
+    <author href="http://gutoxavier.com.br" email="gutoffline@gmail.com">
+        Guto Xavier
+    </author>
+    <icon src="icone.png" />
+</widget>
