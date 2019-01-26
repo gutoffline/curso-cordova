@@ -1,0 +1,42 @@
+            .cabecalho-rodape{
+                text-align: center;
+                border: 1px green solid;
+            }
+            
+            .titulo{
+                font-size: 30px; 
+                color: red; 
+                font-family: Trebuchet MS; 
+                text-decoration: overline; 
+                text-transform: uppercase;
+            }
+            
+            .logo-cabecalho{
+                width: 200px;
+            }
+            
+            .itens-menu{
+                color: tomato; 
+                text-transform: uppercase; 
+                font-family: arial; 
+                font-size: 14px;
+            }
+            
+            .tabela{
+                border: 1px solid;
+            }
+            
+            .cabecalho-colunas{
+                background-color: tomato; 
+                color: white; 
+                text-transform: uppercase; 
+                font-family: arial
+            }
+            
+            .colunas{
+                border: 1px solid;
+            }
+            
+            .pratos{
+                width: 180px;
+            }

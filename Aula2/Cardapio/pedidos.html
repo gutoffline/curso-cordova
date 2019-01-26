@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cardápio</title>
+        <meta charset="utf-8">
+        <link href="estilo.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="cabecalho-rodape">
+            <h1 class="titulo">Restaurante</h1>
+            <img src="imagens/logotipo.png" class="logo-cabecalho">
+            
+            <nav>
+                <a href="index.html" class="itens-menu">Pratos</a> - 
+                <a href="pedidos.html" class="itens-menu">Pedidos</a> - 
+                <a href="mailto:restaurante@gmail.com" class="itens-menu">Fale conosco</a>
+            </nav>
+        </header>
+        <main>
+           
+            <form>
+                <label for="nome">Nome:</label><input type="text" required id="nome"> <br>
+                <label for="correio">E-mail:</label><input type="email" id="correio"> <br>
+                <label for="idade">Idade:</label> <input type="number" id="idade"><br>
+                <label for="cidade">Cidade:</label>
+                <select id="cidade">
+                    <option value="AME">Americana</option>
+                    <option value="SBO">Santa Bárbara</option>
+                    <option value="PIR">Piracicaba</option>
+                </select>
+                <br>
+                <input type="checkbox" value="gato" id="gato">GATO
+                <input type="checkbox" value="cachorro" id="cao">CÃO
+                <input type="checkbox" value="lag" id="lagart">LAGARTO
+                <br>
+                
+                Assunto: <input type="radio" name="assunto" id="reclamacao">Reclamação
+                <input type="radio" name="assunto" id="sug">Sugestão
+                <input type="radio" name="assunto" id="out">Outro
+                <br>
+                Mensagem: <br>
+                <textarea id="mensagem"></textarea><br>
+                <button type="button" onclick="alert('OPA, CLICOU');"> Enviar </button>
+            </form>
+        </main>
+        <footer class="cabecalho-rodape">
+            restaurante@gmail.com - (19) 12345-1234 <br>
+            <img src="imagens/logotipo.png" style="width: 100px">
+        </footer>
+    </body>
+</html>
+
+
+
