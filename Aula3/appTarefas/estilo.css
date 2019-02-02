@@ -1,0 +1,25 @@
+#data-tarefa, #tarefa{
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    font-size: 14px;
+    border: 1px solid #DC143C;
+    color: #800000;
+    height: 30px;
+}
+
+button{
+    width: 200px;
+    margin: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #DC143C;
+    border: 0px;
+    height: 50px;
+}
+
+*{
+    font-family: arial;
+    font-size: 14px;
+}

@@ -1,6 +1,140 @@
-header{
-    border: 1px solid black;
+header , .banner , .conteudo , .contato{
     width: 960px;
     margin-left: auto;
     margin-right: auto;
 }
+
+body{
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18px;
+}
+
+header{
+    background-color: #DC143C;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color:white;
+}
+
+header nav ul li a:hover{
+    background-color: black;
+}
+
+.navegacao_banner{
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao_banner a{
+    display: block;
+    border: 1px solid #DC143C;
+    margin: 5px;
+    padding: 10px;
+}
+
+.navegacao_banner a:hover{
+    background-color: #DC143C;
+    color: white;
+}
+
+
+h1{
+    color:#DC143C;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom:10px;
+    border-bottom: 2px solid #DC143C;
+    text-align: center;
+}
+
+.conteudo p{
+    text-align: justify;
+}
+
+.conteudo p:first-line{
+    background: yellow;
+}
+
+.conteudo p:first-letter{
+    margin-left: 30px;
+}
+
+.colunas{
+    column-count: 2;
+}
+
+.contato{
+    text-align: center;
+}
+
+#nome{
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+}
+
+#email{
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+}
+
+#mensagem{
+    width:100%;
+    padding: 5px;
+    margin: 5px;
+    height: 80px
+}
+
+button{
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+    height: 50px;
+    color: white;
+    background-color: #DC143C;
+    border: 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: white;
+    color: #DC143C;
+    border: 5px double #DC143C;
+}
+
+footer{
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 5px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img{
+    width:60px;
+    height: 60px;
+    filter: grayscale(100%);
+}
+
+footer img:hover{
+    filter: grayscale(0);
+}
+
+
+
+
+
+
