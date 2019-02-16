@@ -1,0 +1,19 @@
+/* label color */
+.input-field label {
+	color: #ff4081;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+	color: #ff80ab;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+	border-bottom: 1px solid #c51162;
+	box-shadow: 0 1px 0 0 #c51162;
+}
+
+
+#lista-tarefas li{
+	padding-bottom: 2px;
+	padding-top: 2px;
+}

@@ -3,30 +3,66 @@
     <head>
         <title>Meu Site</title>
         <meta charset="utf-8">
-
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="materialize/css/materialize.css" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
     <body>
+        
         <header>
+            
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="http://facebook.com">Facebook</a></li>
-                    <li><a href="http://youtube.com">Youtube</a></li>
-                    <li><a href="mailto:teixeira@gmail.com">E-mail</a></li>
+                <img src="imagens/logo.png" width="50" class="brand-logo"> 
+                
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">E-mail</a></li>
                 </ul>
             </nav>
             
-        </header>
+            <ul class="sidenav" id="mobile-demo">
+                
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="imagens/fundo.jpg">
+                        </div>
+                        <a href="#user"><img class="circle" src="imagens/pessoa.jpg"></a>
+                        <a href="#name"><span class="white-text name">Tony Stark</span></a>
+                        <a href="#email"><span class="white-text email">tonystark@gmail.com</span></a>
+                    </div>
+                </li>
+                <li><a href="index.html"><i class="material-icons left inline-icon">home</i>Home</a></li>
+                <li><a href="contato.html"><i class="material-icons left">phone</i>Contato</a></li>
+                <li><a href="http://facebook.com"><i class="material-icons left">face</i>Facebook</a></li>
+                <li><a href="http://youtube.com"><i class="material-icons left">ondemand_video</i>Youtube</a></li>
+                <li><a href="mailto:teixeira@gmail.com"><i class="material-icons left">email</i>E-mail</a></li>
 
-            <div id="banner">
-                <img src="imagens/foto1.jpg">
-                <img src="imagens/foto2.jpg">
-                <img src="imagens/foto3.jpg">
-            </div>
+            </ul>
             
+        </header>
+        <div class="container">  
+            <div id="banner" class="center-align">
+                <div class="carousel carousel-slider">
+                    <a href="#" class="carousel-item">
+                        <img src="imagens/foto1.jpg" class="responsive-img">
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <img src="imagens/foto2.jpg" class="responsive-img">
+                    </a>
+                    <a href="#" class="carousel-item">
+                        <img src="imagens/foto3.jpg" class="responsive-img">
+                    </a>
+                </div>
+            </div>
+          
             <div id="conteudo">
-                <h1>Nossos Produtos</h1>
+                <h1 class="red-text text-darken-4 blue lighten-3">Nossos Produtos</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pharetra posuere augue, id vehicula sapien semper sit amet. Maecenas fermentum magna erat, non posuere dui mollis sit amet. Cras bibendum dolor dui, id congue libero sodales vel. Mauris accumsan erat sed leo pretium eleifend. Sed dignissim cursus lectus. Sed et purus eros. Maecenas sit amet ipsum sed metus rutrum convallis ut sit amet massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vel lacinia libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus luctus, ipsum nec dapibus pulvinar, turpis eros pharetra ipsum, ac tempor magna urna non justo. Proin placerat nibh sit amet varius aliquet.</p>
                 <p>Ut vel turpis neque. Duis vel vehicula urna. Vestibulum hendrerit scelerisque ligula at iaculis. In massa mi, dapibus quis felis quis, finibus auctor metus. Ut posuere felis sapien, id rutrum quam condimentum sit amet. Donec iaculis feugiat eros, vitae lobortis metus iaculis eu. Donec consequat leo vel posuere maximus. Praesent commodo odio ex, id accumsan risus tristique quis. Integer sit amet tincidunt erat. Sed sagittis mattis quam, id efficitur nunc posuere non. Suspendisse potenti. Quisque quis neque cursus, dapibus est et, consectetur nulla. Morbi facilisis urna a turpis tempus, et porttitor sem commodo. Integer nec scelerisque nulla, eu finibus quam.</p>
                 <p>Aliquam vel nisl eu libero vehicula sollicitudin vel sed magna. Pellentesque consequat dignissim neque, a pretium dui imperdiet bibendum. Maecenas auctor tellus vel nisl consequat sagittis. Integer in elit dignissim, commodo mi a, rhoncus eros. Aliquam quis nisi eros. Phasellus dictum commodo nibh quis porta. Suspendisse cursus arcu ligula, vitae facilisis odio rhoncus in. Ut neque dui, convallis eu sem eget, consequat vehicula sapien.</p>
@@ -48,24 +84,43 @@
 					<label for="email">E-mail</label>
 					<textarea id="mensagem"></textarea>
 					<label for="mensagem">Mensagem</label>
-					<button type="submit">Enviar</button>
+					<button type="submit" class="waves-effect waves-light  btn"><i class="material-icons left">directions_run</i>Enviar</button>
                 </form>
                 
             </div>
+            <br>
+            
+            <div class="center-align">
+                <a class="waves-effect waves-light btn-large modal-trigger" href="#mais-informacoes">MAIS INFORMAÇÕES</a>
+            </div>
         
-        
-        <footer>
-            <p>
-				<a href="http://facebook.com" target="_blank"><img src="imagens/facebook.png" alt="Facebook"></a>
-				<a href="http://youtube.com" target="_blank"><img src="imagens/youtube.png" alt="youtube"></a>
-				<a href="mailto:teixeira@gmail.com" target="_blank"><img src="imagens/email.png" alt="teixeira@gmail.com"></a>
-            </p>
-            <p><img src="imagens/logo.png" width="64"></p>
-
+            <div id="mais-informacoes" class="modal">
+                <div class="modal-content">
+                  <h4>Bem vindo</h4>
+                  <p>essas são as informações complementares</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+                </div>
+            </div>
+        </div>
+        <footer class="red lighten-1">
+            <div class="row">
+                <p class="col s8">
+                    <a href="http://facebook.com" target="_blank"><img src="imagens/facebook.png" alt="Facebook"></a>
+                    <a href="http://youtube.com" target="_blank"><img src="imagens/youtube.png" alt="youtube"></a>
+                    <a href="mailto:teixeira@gmail.com" target="_blank"><img src="imagens/email.png" alt="teixeira@gmail.com"></a>
+                </p>
+                <p class="col s4 right-align">
+                    <img src="imagens/logo.png" width="50" class="circle">
+                </p>
+            </div>
         </footer>
 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="materialize/js/materialize.js"></script>
         <script src="funcoes.js"></script>
-
+        
     </body>
 </html>
 
