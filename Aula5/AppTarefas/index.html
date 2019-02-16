@@ -4,10 +4,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Task Manager</title>
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/estilo.css">
 </head>
-
+<body class="pink lighten-5 pink-text lighten-1-text" onload="CarregarTarefas();">
+	<div class="container">
+		<h2 class="center">Task Manager</h2>
+		<form class="col s12">
+			<div class="row">
+				<div class="input-field col s12">
+					<input type="text" id="tarefa">
+					<label for="tarefa">Tarefa</label>
+				</div> 
+			</div>
+			<div class="row">
+				<button type="button" class="pink darken-3 waves-effect waves-light btn-large" id="add-tarefa" onclick="AdicionaTarefa();" ><i class="material-icons right">add_circle_outline</i>Add Tarefa</button>
+			</div>
+		</form>
+		<ul id="lista-tarefas"></ul>
+        <button type="button" class="btn" onclick="ExcluirTodas();">Excluir todas as tarefas</button>
+        <button type="button" class="btn" onclick="SalvarTarefas();">Salvar Tarefas</button>
+        <button type="button" class="btn" onclick="CarregarTarefas();">Carregar Tarefas</button>
+        
+	</div>
+    
+    <div id="mensagem" class="modal">
+        <div class="modal-content">
+            <h4>SUCESSO!!!</h4>
+            <p>Suas tarefas foram salvas com sucesso!</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn">OK</a>
+        </div>
+    </div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
 
 
 

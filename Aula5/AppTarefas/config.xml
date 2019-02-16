@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets"
         xmlns:gap="http://phonegap.com/ns/1.0"
-        id=""
+        id="org.gutoxavier.taskmgr"
         version="1.0.0">
 
     <name>
-        
+        Task Manager
     </name>
 
     <description>
-        
+        Gerenciador de tarefas.
     </description>
     
-    <author href="" email="">
-        
+    <author href="http://gutoxavier.com.br" email="gutoffline@gmail.com">
+        Guto Xavier
     </author>
 
     <icon src="icon.png" />
+
+    <preference name="orientation" value="portrait" />
+    <platform name="android" />
+    
+    <plugin name="cordova-plugin-statusbar" spec="*" />
+    <!-- Status bar -->
+	<platform name="android">
+		<preference name="StatusBarBackgroundColor" value="#FF0000" />
+	</platform>
+
 </widget>
-
-
 
 
 
