@@ -1,0 +1,56 @@
+cordova create AppDialogs com.gutoxavier.appdialogs AppDialogs
+cd AppDialogs
+cordova platform add android
+cordova plugin add cordova-plugin-dialogs
+
+[abrir a pasta AppDialogs no brackets]
+[abrir o arquivo www\index.html]
+
+
+
+gutoffline@gmail.com
+
+chrome://inspect/#devices
+
+
+
+
+
+cordova create AppEventos com.gutoxavier.appeventos AppEventos
+cd AppEventos
+cordova platform add android
+
+[abrir a pasta AppDialogs no brackets]
+[abrir o arquivo www\js\index.js]
+
+
+cd.. 
+cordova create AppSite com.gutoxavier.appsite AppSite
+cd AppSite
+cordova platform add android
+
+[abrir a pasta AppSite no brackets]
+[abrir o arquivo www\index.html]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

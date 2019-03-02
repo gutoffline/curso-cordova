@@ -1,0 +1,52 @@
+https://www.webrtc-experiment.com/screen/?s=56w0gbvk7ya
+
+cordova create MeuApp
+cd MeuApp
+cordova platform add browser
+cordova run browser
+cordova platform add android
+cordova run android --device
+
+cordova plugin add cordova-plugin-splashscreen
+
+C:\Users\Administrador\AppData\Local\Android\Sdk\tools\bin>sdkmanager.bat --licenses
+
+cordova create MeuApp
+cd MeuApp
+cordova platform add browser
+cordova run browser
+cordova platform add android
+cordova run android --device
+
+
+
+
+cordova create CEP com.gutoxavier.appcep AppCEP
+cd CEP
+cordova platform add android
+cordova platform add browser
+cordova plugin add cordova-plugin-splashscreen
+
+[TEMPLATE]
+
+
+<preference name="SplashScreen" value="screen" />
+<splash src="res/screen/android/screen-hdpi-portrait.png" />
+
+cordova plugin add cordova-plugin-vibration
+
+cordova plugin add cordova-plugin-dialogs
+
+
+
+
+
+
+
+
+
+
+
+
+
+

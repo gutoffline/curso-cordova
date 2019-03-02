@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>App CEP</title>
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+</head>
+<body class="red lighten-5">
+    <div class="container">
+        <input type="text" id="cep">
+        <button id="botaoCep" type="button" onclick="BuscaEndereco();" class="btn red darken-1">Pesquisar</button>
+		
+		<button id="botaoAlerta" type="button" onclick="Alerta();" class="btn red darken-1">ALERTA</button>
+		
+		<button type="button" onclick="dialogAlert();" class="btn red darken-1">ALERTA</button>
+        <div id="endereco"></div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+	<script>
+	function dialogAlert() {
+   var message = "I am Alert Dialog!";
+   var title = "ALERT";
+   var buttonName = "Alert Button";
+   navigator.notification.alert(message, alertCallback, title, buttonName);
+   
+   function alertCallback() {
+      console.log("Alert is Dismissed!");
+   }
+}
+	</script>
+</body>
+</html>
