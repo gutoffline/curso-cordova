@@ -14,9 +14,22 @@ function ListaProdutos(){
 }
 
 function MontaCard(nome, foto, preco, descricao){
-	elemento = '<div class="col s12 m6"><div class="card"><div class="card-image"> <img src="'+foto+'"> <span class="card-title">'+nome+'</span> <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a></div><div class="card-content"> <p>'+nome + " - " +descricao + " <strong>R$"+ preco +'</strong></p></div> </div></div>';
+    let elemento = "";
+    elemento += '<div class="col s12 m6">';
+    elemento += '<div class="card">';
+    elemento += '<div class="card-image">';
+    elemento += '<img src="'+foto+'">';
+    elemento += '<button class="btn-floating btn-large halfway-fab waves-effect waves-light red" onclick="FazerPedido(\''+nome+'\');"><i class="material-icons">add</i></button>';
+    elemento += '</div>';
+    elemento += '<div class="card-content">';
+    elemento += '<span class="card-title">'+nome+ ' - R$ '+ parseFloat(preco).toLocaleString('pt-BR') +'</span>';
+    elemento += '<p>'+descricao+'</p>';
+    elemento += '</div>';
+    elemento += '</div>';
+    elemento += '</div>';
 	return elemento;
 }
+
 ListaProdutos();
 
 function FazerPedido(){
@@ -36,3 +49,9 @@ function FazerPedido(){
         }
     });
 }
+
+
+
+
+
+
