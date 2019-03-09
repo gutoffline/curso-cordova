@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        id="com.gutoxavier.appPedidosCozinha"
+        version="1.0.0">
+
+    <name>
+        App Pedidos Cozinha
+    </name>
+
+    <description>
+        Aplicativo que faz pedidos para a Cozinha
+    </description>
+    
+    <author href="http:gutoxavier.com.br" email="gutoffline@gmail.com">
+        Guto Xavier
+    </author>
+    
+    <plugin name="cordova-plugin-whitelist" source="npm"/>
+    <access origin="*" launch-external="yes" />
+    
+    <icon src="icon.png" />
+
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+    <platform name="android" />
+
+</widget>
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>App Pedidos</title>
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+</head>
+<body>
+	<div class="container">
+		<form name="pedido" action="http://cozinhapp.sergiolopes.org/novo-pedido" method="get">
+			<input type="number" name="mesa" id="mesa" placeholder="mesa">
+			<select name="pedido" id="pedido" class="browser-default">
+                <option value="Bolo de Chocolate">Bolo de Chocolate</option>
+                <option value="Café">Café</option>
+                <option value="Bolo de Cenoura">Bolo de Cenoura</option>
+			</select><br>
+			<button class="btn" type="submit">Enviar pedido</button>
+		</form>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+</body>
+</html>
+
+
+
+
