@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    
+        
+        <ul class="tabs">
+            <li class="tab"><a href="#tela1">CADASTROS</a></li>
+            <li class="tab"><a href="#tela2">REGISTROS</a></li>
+            <li class="tab"><a href="#tela3">CRÉDITOS</a></li>
+        </ul>
+            <div id="tela1" class="col s12">
+                <h2>CADASTRO</h2>
+                <div class="input-field">
+                  <input id="nome" type="text">
+                  <label for="nome">Nome</label>
+                </div>
+                <div class="input-field">
+                  <input id="email" type="email">
+                  <label for="email">E-mail</label>
+                </div>
+
+                <button class="btn btn-large">Cadastrar</button>
+            </div>
+            <div id="tela2" class="col s12">
+                <h2>REGISTROS</h2>
+                <table class="striped">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Bruce</td>
+                            <td>bruce@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>alan@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Dafine</td>
+                            <td>dafine@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            </div>
+            <div id="tela3" class="col s12">
+                <h2>CRÉDITOS</h2>
+                
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="imagens/tony.jpg">
+                                <span class="card-title">Tony Stark</span>
+                            </div>
+                            
+                            <div class="card-content">
+                                <p>Essa aplicação foi desenvolvida por <strong>Tony Stark.</strong> Qualquer sugestão, reclamação ou crítica deve ser enviado para <a href="mailto:toninho@mgail.com">toninho@gmail.com</a>.</p>
+                            </div>
+                             <div class="card-action">
+                              <a href="https://github.com/gutoffline/curso-cordova">GITHUB</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

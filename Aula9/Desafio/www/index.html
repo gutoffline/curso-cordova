@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    
+        
+        <ul class="tabs">
+            <li class="tab"><a href="#tela1">CADASTRAR</a></li>
+            <li class="tab"><a href="#tela2">PESQUISAR</a></li>
+        </ul>
+            <div id="tela1" class="col s12">
+                <div class="input-field">
+                  <input id="nome" type="text">
+                  <label for="nome">Nome</label>
+                </div>
+                <div class="input-field">
+                  <input id="email" type="email">
+                  <label for="email">E-mail</label>
+                </div>
+                <div class="input-field">
+                  <input id="celular" type="tel">
+                  <label for="celular">Celular</label>
+                </div>
+                <div class="input-field">
+                  <input id="telefone" type="tel">
+                  <label for="telefone">Telefone</label>
+                </div>
+
+                <p class="center-align">
+                    <button class="btn btn-large" type="button" onclick="Criar();">Salvar</button>
+                </p>
+                
+            </div>
+            <div id="tela2" class="col s12">
+                <div class="input-field">
+                  <input id="nome" type="text">
+                  <label for="nome">Nome</label>
+                </div>
+                <ul>
+                    <li>Bruce Wayne - 11111-1111</li>
+                </ul>
+
+                <p class="center-align">
+                    <button class="btn btn-large" type="button" onclick="Buscar();">Pesquisar</button>
+                </p>
+            
+            </div>
+
+        
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

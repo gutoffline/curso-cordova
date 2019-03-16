@@ -1,0 +1,11 @@
+html,body{ 
+    overflow:hidden; 
+    height:100%; 
+}
+
+.tabs-content.carousel { 
+    height: 100%; overflow-x:hidden; overflow-y: scroll; 
+} 
+.tabs-content.carousel .carousel-item { 
+    width: 100%; height: 100%; 
+} 
