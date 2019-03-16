@@ -1,6 +1,7 @@
 $('.tabs').tabs();
 
 function Criar() {
+	M.toast({html: 'Cadastrado'})
     var contato = navigator.contacts.create({"displayName": "Bruce Wayne"});
    contato.save(Sucesso, Erro);
     
