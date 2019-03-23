@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <title>Banco</title>
+        <link rel="alternate" href="css/index.css">
+    </head>
+<body>
+    <h1>Cadastro de Clientes</h1>
+    <div id="JanelaEditar" >
+		<input type="text" id="editNome"><br>
+		<input type="email" id="editEmail"><br>
+		<button onclick="Excluir()">Excluir</button>
+		<button onclick="Editar()">Editar</button>
+		<button onclick="document.getElementById('JanelaEditar').style.display='none';">Cancelar</button>
+    </div>
+
+    <div>
+        Name<input type="text" value="" id="txtNome"><br>
+        E-mail<input type="email" value="" id="txtEmail">
+    </div>
+    <div id="tblDiv"></div>
+    <div style="text-align: center">
+        <button onclick="Inserir()">Salvar</button>
+        <button onclick="Pesquisar()">Pesquisar</button>
+        <button onclick="ListarTodos()">Exibir Todos</button>
+    </div>
+
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+<!-- taco plugin add cordova-sqlite-storage --save -->

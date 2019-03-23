@@ -1,0 +1,86 @@
+
+<style>
+input[type='text'] {
+       border: 1px solid black;
+       width: 200px;
+       margin-left: 10px;
+}
+table {
+    width:100%;
+}
+table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+    background-color:#fff;
+}
+table#t01 th    {
+    background-color: black;
+    color: white;
+}
+button {
+    margin: 10px;
+    font: bold 13px "Helvetica Neue", Helvetica, Arial, clean, sans-serif !important;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25), -2px 0 1px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    display: inline-block;
+    color: white;
+    padding: 5px 10px 5px;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #BE3E76;
+    border-style: none;
+    text-align: center;
+    overflow: visible;
+}
+
+button:active {
+    background-position: 0 -100px;
+    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.7);
+    -webkit-box-shadow: none;
+}
+
+#JanelaEditar {
+    position:fixed;z-index:9999;background-color:rgba(0, 0, 0,0.9);width:100%; height:100%;display:none;
+}
+</style>
+<body>
+    <h1>Cadastro de Clientes</h1>
+    <div id="JanelaEditar" >
+		<input type="text" id="editNome"><br>
+		<input type="email" id="editEmail"><br>
+		<button onclick="Excluir()">Excluir</button>
+		<button onclick="Editar()">Editar</button>
+		<button onclick="document.getElementById('JanelaEditar').style.display='none';">Cancelar</button>
+    </div>
+
+    <div>
+        Name<input type="text" value="" id="txtNome"><br>
+        E-mail<input type="email" value="" id="txtEmail">
+    </div>
+    <div id="tblDiv"></div>
+    <div style="text-align: center">
+        <button onclick="Inserir()">Sallet</button>
+        <button onclick="Pesquisar()">Pesquisar</button>
+        <button onclick="ListarTodos()">Exibir Todos</button>
+    </div>
+    
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+
+  </body>
+
+<!-- taco plugin add cordova-sqlite-storage --save -->
