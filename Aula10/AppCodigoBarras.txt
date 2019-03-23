@@ -1,6 +1,0 @@
-cordova create AppCodigoBarras com.gutoxavier.appcodigobarras AppCodigoBarras
-cd AppCodigoBarras
-cordova platform add android
-cordova run android --device
-cordova plugin add cordova-plugin-inappbrowser
-cordova plugin add cordova-plugin-barcodescanner
